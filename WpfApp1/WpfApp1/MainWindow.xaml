@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="189*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="188*"/>
+            <ColumnDefinition Width="188*"/>
+            <ColumnDefinition Width="189*"/>
+            <ColumnDefinition Width="84*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Name1" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Background="Wheat" Text="" Margin="0,5,0,10" MinWidth="150" Height="NaN" Width="150"/>
+        <TextBox x:Name="Name2" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Background="Wheat" Text="" Margin="0,5,0,10" MinWidth="150" Height="NaN" Width="150"/>
+        <TextBox x:Name="Name3" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Background="Wheat" Text="" Margin="0,5,0,10" MinWidth="150" Height="NaN" Width="150"/>
+        <TextBox x:Name="Amount1" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Background="Wheat" Margin="0,5,0,10" MinWidth="150" Height="NaN" Width="150"/>
+        <TextBox x:Name="Amount2" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Background="Wheat" Margin="0,5,0,10" MinWidth="150" Height="NaN" Width="150"/>
+        <TextBox x:Name="Amount3" Grid.Column="3" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Background="Wheat" Margin="0,5,0,10" MinWidth="150" Height="NaN" Width="150"/>
+        <TextBox x:Name="Answer" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="4" Background="GreenYellow" Grid.ColumnSpan="2" TextWrapping="Wrap" Margin="0,5,0,10" MinWidth="330" Height="NaN" Width="330" TextChanged="Answer_TextChanged"/>
+        <StackPanel Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Height="164" Width="NaN">
+            <Button x:Name="sum" Grid.Column="1" Background="Yellow" Content="Сумма" HorizontalAlignment="Center" Margin="5,5,5,5" Grid.Row="4" VerticalAlignment="Center" MinHeight="25" MinWidth="150" Click="sum_Click"/>
+            <Button x:Name="pro" Grid.Column="1" Background="Yellow" Content="Произведение" HorizontalAlignment="Center" Margin="5,5,5,5" Grid.Row="4" VerticalAlignment="Center" MinHeight="25" MinWidth="150" Click="pro_Click"/>
+            <Button x:Name="max" Grid.Column="1" Background="Yellow" Content="Максимум" HorizontalAlignment="Center" Margin="5,5,5,5" Grid.Row="4" VerticalAlignment="Center" MinHeight="25"  MinWidth="150" Click="max_Click"/>
+            <Button x:Name="min" Content="Минимум" MinHeight="25" Background="Yellow" MinWidth="150" Click="min_Click" Width="147"/>
+            <Button x:Name="maxname" Grid.Column="1" Content="Имя" Background="Yellow" HorizontalAlignment="Center" Margin="5,5,5,5" Grid.Row="4" VerticalAlignment="Center" MinHeight="25"  MinWidth="150" Click="maxname_Click" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="2.607"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.569"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </StackPanel>
+        <Label Grid.Row="1" Margin="86,5,0,5" Content="Имя" FontSize="22" HorizontalAlignment="Left" Height="NaN" Width="55"></Label>
+        <Label Grid.Row="3" Margin="48,3,0,7" Content="Число" FontSize="22" HorizontalAlignment="Left" Height="NaN" Width="103"></Label>
+
+    </Grid>
+</Window>

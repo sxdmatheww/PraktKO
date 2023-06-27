@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp1._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1._2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="73*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="154*"/>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="201*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Соревнование по триатлону" HorizontalAlignment="Left" Grid.ColumnSpan="3" VerticalAlignment="Center" FontSize="36" Grid.Column="1" Margin="75,0,0,0"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Жора" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="1" Grid.Column="2" Content="Алексей" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="1" Grid.Column="3" Content="Михаил" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="1" Grid.Column="4" Content="Скорость" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="2" Grid.Column="4" Content="Плавание(м/мин)" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="3" Grid.Column="4" Content="Велосипед(км/ч)" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="4" Grid.Column="4" Content="Бег(км/ч)" HorizontalAlignment="Center"></Label>
+        <Label Grid.Row="5" Grid.Column="4" Content="Общее время(мин)" HorizontalAlignment="Center"></Label>
+        <TextBox Grid.Row="2" Background="NavajoWhite" Grid.Column="1" x:Name="speed1"></TextBox>
+        <TextBox Grid.Row="2" Background="NavajoWhite" Grid.Column="2" x:Name="speed2"></TextBox>
+        <TextBox Grid.Row="2" Background="NavajoWhite" Grid.Column="3" x:Name="speed3"></TextBox>
+        <TextBox Grid.Row="3" Background="NavajoWhite" Grid.Column="1" x:Name="speed12"></TextBox>
+        <TextBox Grid.Row="3" Background="NavajoWhite" Grid.Column="2" x:Name="speed22"></TextBox>
+        <TextBox Grid.Row="3" Background="NavajoWhite" Grid.Column="3" x:Name="speed32"></TextBox>
+        <TextBox Grid.Row="4" Background="NavajoWhite" Grid.Column="1" x:Name="speed13"></TextBox>
+        <TextBox Grid.Row="4" Background="NavajoWhite" Grid.Column="2" x:Name="speed23"></TextBox>
+        <TextBox Grid.Row="4" Background="NavajoWhite" Grid.Column="3" x:Name="speed33"></TextBox>
+        <TextBox Grid.Row="5" Background="NavajoWhite" Grid.Column="1" x:Name="speed14"></TextBox>
+        <TextBox Grid.Row="5" Background="NavajoWhite" Grid.Column="2" x:Name="speed24"></TextBox>
+        <TextBox Grid.Row="5" Background="NavajoWhite" Grid.Column="3" x:Name="speed34"></TextBox>
+        <Button Grid.Column="4" Background="Yellow" Grid.Row="6" Margin="5,5,5,5" Content="время" Click="Button_Click"></Button>
+        <Button Grid.Column="0" Background="Yellow" Grid.Row="6" Margin="5,5,5,5" Content="чемпион" Click="Button_Click_1"></Button>
+        <StackPanel Grid.Row="6" Grid.Column="1">
+            <Label Content="чемпион:"/>
+            <TextBox Background="NavajoWhite" Grid.Row="6" Grid.Column="2" x:Name="champ" MinHeight="25"/>
+        </StackPanel>
+    </Grid>
+</Window>
